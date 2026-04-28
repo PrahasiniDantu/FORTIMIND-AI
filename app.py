@@ -26,8 +26,44 @@ st.markdown("""
     background-color: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(15px);
 }
+[data-testid="stSidebar"] * {
+    color: #F8FAFC !important;
+}
+[data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 {
+    color: #FFFFFF !important;
+}
+
 /* Global text color adjustment for dark theme */
 .css-1g8v9l0, .css-10tr5yj, .css-1qg05tj, .stMarkdown, .stText, h1, h2, h3, p, label {
+    color: #F8FAFC !important;
+}
+
+/* File Upload Box */
+[data-testid="stFileUploader"] > section,
+[data-testid="stFileUploadDropzone"],
+[data-testid="stFileUploaderDropzone"] {
+    background-color: rgba(15, 23, 42, 0.85) !important;
+    border: 1px dashed rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
+}
+[data-testid="stFileUploader"] * {
+    color: #F8FAFC !important;
+}
+[data-testid="stFileUploader"] button {
+    background-color: #1e293b !important;
+    color: #F8FAFC !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+[data-testid="stFileUploader"] button:hover {
+    background-color: #334155 !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Toast (Welcome Message) */
+div[data-testid="stToast"] {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+}
+div[data-testid="stToast"] * {
     color: #F8FAFC !important;
 }
 
@@ -54,7 +90,7 @@ st.markdown("""
 
 /* Gradient text */
 .gradient-text {
-    background: linear-gradient(90deg, #6EE7B7 0%, #3B82F6 100%);
+    background: linear-gradient(90deg, #60A5FA, #A78BFA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
@@ -64,7 +100,7 @@ st.markdown("""
 }
 .subtitle-text {
     font-size: 1.2rem;
-    color: #cbd5e1;
+    color: #CBD5E1;
     margin-bottom: 2rem;
     font-weight: 300;
 }
